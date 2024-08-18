@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 400px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="url"],
+      input[type="date"],
+      input[type="number"],
+      input[type="color"],
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='%23ccc' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 16px 16px;
+        padding-right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="username">Username</label>
+      <input
+        type="text"
+        name="username"
+        id="fname"
+        placeholder="Enter your name"
+        min="4"
+        maxlength="30"
+        required
+      />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter your password"
+      />
+
+      <label for="city">City</label>
+      <select name="city" id="city">
+        <option value="HCM">HCM</option>
+        <option value="VungTau">Vũng Tàu</option>
+        <option value="BinhDuong">Bình Dương</option>
+      </select>
+
+      <label for="email">Email</label>
+      <input type="email" placeholder="Enter your email" autofocus pattern />
+
+      <label for="url">Website</label>
+      <input
+        type="url"
+        id="website"
+        name="website"
+        placeholder="https://www.example.com"
+      />
+
+      <label for="gioiTinh">Giới tính:</label>
+      <span
+        style="
+          display: flex;
+          align-items: baseline;
+          justify-content: flex-start;
+        "
+      >
+        <input type="radio" id="nam" name="gioiTinh" value="Nam" />
+        <label for="nam" style="padding-right: 12px">Nam</label>
+
+        <input type="radio" id="nu" name="gioiTinh" value="Nữ" />
+        <label for="nu">Nữ</label>
+      </span>
+
+      <label for="ngaySinh">Ngày sinh:</label>
+      <input type="date" id="ngaySinh" name="ngaySinh" min="2023-01-01" />
+
+      <label for="diem">Điểm:</label>
+      <input type="number" id="diem" name="diem" min="0" max="10" step="0.5" />
+
+      <label for="mauYeuThich">Màu yêu thích:</label>
+      <input type="color" id="mauYeuThich" name="mauYeuThich" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
