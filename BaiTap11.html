@@ -70,6 +70,10 @@
         max-width: 400px;
         width: 100%;
       }
+      .list__tem {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
     </style>
   </head>
   <body>
@@ -80,95 +84,163 @@
             <h1 class="sitename">
               <a href="/" rel="home" title="Home">HTML5 Structure</a>
             </h1>
-            <h2 class="subtitle">Page Header</h2>
+            <img
+            style="width: 100%;
+            height: 100%"; 
+             src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/BIT_logo.png" alt="logo_ueh">
           </hgroup>
         </figcaption>
 
         <nav id="globalnav" class="nav globalnav">
-          <p>Navigation</p>
+          <ul
+            style="
+              list-style-type: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <li class="list__tem">
+              <a href="#" title="Home">Chương trình Đại học</a>
+            </li>
+            <li class="list__tem">
+              <a href="#" title="Home">CT Liên thông Đại học</a>
+            </li>
+            <li class="list__tem">
+              <a href="#" title="Home">Chương trình sau đại học</a>
+            </li>
+            <li class="list__tem">
+              <a href="#" title="Home">Chương trình quóc tế</a>
+            </li>
+          </ul>
         </nav>
       </header>
 
       <section id="sectioncontent1" class="section sectioncontent">
         <figcaption id="sectionheader1" class="header sectionheader">
-          <h2>Section Header</h2>
+          <h2>Chương trình Đại học</h2>
         </figcaption>
 
         <figure id="articlecontent1" class="article articlecontent">
           <figcaption id="articleheader1" class="header articleheader">
-            <h3>Article Header</h3>
+            <h3>
+              <a href="">Hệ thống hoạch định nguồn lực doanh nghiệp (ERP)</a>
+            </h3>
           </figcaption>
-          <p>Artcle</p>
+          <p>
+            Chương trình đào tạo Hệ thống hoạch định nguồn lực doanh nghiệp
+            thuộc ngành Hệ thống thông tin quản lý tại UEH được xây dựng theo
+            tiêu chuẩn tiên tiến hướng đến mục tiêu đào tạo nguồn nhân lực chất
+            lượng cao đạt yêu cầu trong nước và quốc tế, có đủ kiến thức và kỹ
+            năng cần thiết để tham gia tư vấn lựa chọn giải pháp triển khai cũng
+            như vận hành hệ thống thông tin cũng như hệ thống hoạch định nguồn
+            lực cho các tổ chức và doanh nghiệp. Bên cạnh đó, sinh viên luôn
+            được trau dồi kiến thức chuyên môn, nâng cao tay nghề, đồng thời
+            được liên kết chặt chẽ với nhiều tổ chức, doanh nghiệp liên quan.
+          </p>
+          <img
+            style="width: 100%; height: 100%"
+            src="https://bit.ueh.edu.vn/wp-content/uploads/2018/05/ERP-770x385.jpg"
+          />
           <figcaption id="figure1" class="figure">
-            <p>Figure</p>
-            <div class="figcaption">Figure Caption</div>
+            <p>Cơ hội việc làm</p>
+            <div class="figcaption">
+              Sinh viên tốt nghiệp chuyên ngành Hệ thống hoạch định nguồn lực
+              doanh nghiệp có năng lực đảm nhiệm các vị trí sau:
+            </div>
           </figcaption>
           <figcaption id="articlefooter1" class="footer articlefooter">
-            <p>Article footer</p>
+            <p>
+             <ul>
+              <li>Chuyên viên tư vấn giải pháp triển khai, phân tích nghiệp vụ, vận hành, quản trị, bảo trì các hệ thống hoạch định nguồn lực doanh nghiệp tại các doanh nghiệp trong và ngoài nước.</li>
+              <li>Nghiên cứu, ứng dụng các giải pháp hệ thống thông tin trong kinh doanh và quản lý tại các doanh nghiệp trong và ngoài nước.</li>
+              <li>Giảng dạy các môn học về chuyên ngành Hệ thống hoạch định nguồn lực doanh nghiệp trình độ đại học.</li>
+             </ul>
+            </p>
           </figcaption>
         </figure>
 
         <div>
           <figcaption id="articleheader2" class="header articleheader">
-            <h3>Article Header</h3>
+            <h3></h3>
           </figcaption>
-          <p>Artcle</p>
+          <p>Cấu trúc chương trình</p>
           <figure id="fugure2" class="figure">
-            <p>Figure</p>
-            <div class="figcaption">Figure Caption</div>
+            <p>Kiến thức giáo dục chuyên nghiệp: 63 tín chỉ</p>
+            <div class="figcaption">Kiến thức Cơ sở ngành
+
+</div>
           </figure>
           <figcaption id="articlefooter2" class="footer articlefooter">
-            <p>Article footer</p>
+            <p>Kiến thức ngành</p>
           </figcaption>
         </div>
 
         <figcaption id="sectionfooter1" class="footer sectionfooter">
-          <p>Section Footer</p>
+          <p>Kiến thức chuyên ngành</p>
         </figcaption>
       </section>
 
       <aside id="asidecontent1" class="aside asidecontent">
         <figcaption class="header sectionheader">
-          <h2>Aside Header</h2>
+          <h2>Liên kết</h2>
         </figcaption>
 
         <div>
           <figcaption class="header articleheadeer">
-            <h3>Aside Article Header</h3>
+            <h3><a href="">Hệ thống thông tin kinh doanh</a></h3>
+            <img
+              style="width: 100%; height: 100%"
+              src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/mis-770x385.jpg"
+            />
           </figcaption>
-          <p>Aside Artcle Copy</p>
+          <p>
+           Chương trình Hệ thống thông tin kinh doanh thuộc ngành Hệ thống thông tin quản lý. Trong thời đại Công nghiệp 4.0, công cuộc chuyển đổi số gần như đã trở thành một trong những mục tiêu đứng đầu của các tổ chức doanh nghiệp trong và ngoài nước để mong muốn khẳng định và phát triển chính họ. Từ đó, khoa Công nghệ thông tin kinh doanh với kinh nghiệm đã đào tạo chuyên ngành này trong thời gian dài hơn 15 năm cùng với sự thay đổi phù hợp thời đại và tương đương với các chương trình đào tạo của các trường đại học tiên tiến trên thế giới đã tạo ra lợi thế cạnh tranh rất lớn cho các bạn sinh viên tốt nghiệp trong thị trường lao động hiện nay.
+          </p>
           <figcaption id="articlefooter2" class="footer articlefooter">
-            <p>Aside Article footer</p>
+            <p>Chuẩn đầu ra</p>
           </figcaption>
         </div>
 
         <div>
           <figcaption class="header articleheadeer">
-            <h3>Aside Article Header</h3>
+            <h3>Cơ hội việc làm</h3>
           </figcaption>
-          <p>Aside Artcle Copy</p>
+          <p>Cấu trúc chương trình</p>
           <figcaption class="footer articlefooter">
-            <p>Aside Article footer</p>
+            <p>Kiến thức giáo dục đại cương: 50 tín chỉ</p>
           </figcaption>
         </div>
 
         <div>
           <figcaption class="header articleheadeer">
-            <h3>Aside Article Header</h3>
+            <h3>Kiến thức giáo dục chuyên nghiệp: 63 tín chỉ</h3>
           </figcaption>
-          <p>Aside Artcle Copy</p>
+          <p>Kiến thức Cơ sở ngành
+
+</p>
           <figcaption class="footer articlefooter">
-            <p>Aside Article footer</p>
+            <p>Kiến thức ngành
+
+
+
+</p>
           </figcaption>
         </div>
 
         <figcaption class="header articlefooter">
-          <p>Aside footer</p>
+          <p>Kiến thức chuyên ngành
+
+
+
+</p>
         </figcaption>
       </aside>
 
       <footer id="pagefooter" class="footer pagefooter">
-        <p>Page Footer</p>
+        <p style="text-align: center">
+          &#169; 2017–2024 Khoa Công nghệ Thông tin Kinh doanh
+        </p>
       </footer>
     </article>
   </body>
